@@ -5,8 +5,8 @@ let pokemonList = [
 ]
 for (let i = 0; i < pokemonList.length; i++) {
     if (pokemonList[i].height < 2) {
-        document.write(`${pokemonList[i].name} (height: ${pokemonList[i].height})</p>`)
+        document.write(`${pokemonList[i].name} (height: ${pokemonList[i].height})<p></p>`)
     } else
-    document.write(`${pokemonList[i].name} (height: ${pokemonList[i].height}) - "Wow! That's BIG!"</p>`)
+    document.write(`${pokemonList[i].name} (height: ${pokemonList[i].height}) - "Wow! That's BIG!"<p></p>`)
 }
 console.log(pokemonList)
