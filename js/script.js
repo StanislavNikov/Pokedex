@@ -27,6 +27,5 @@ pokemonRepository.getAll().forEach(function(pokemon){
     if (pokemon.height < 2) {
         document.write(`${pokemon.name} (height: ${pokemon.height})<p></p>`)
     } else
-    document.write(`${pokemon.name} (height: ${pokemon.height}) - "Wow! That's BIG!"<p></p>`)
+    document.write(`<p>${pokemon.name} (height: ${pokemon.height}) - "Wow! That's BIG!"</p>`)
     })
-    
