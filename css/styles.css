@@ -57,7 +57,6 @@ body {
 
 #modal-container {
     position: fixed;
-    padding: 20px;
     top: 0;
     left: 0;
     width: 100%;
@@ -84,8 +83,8 @@ body {
     margin: auto;
     background: url(../files/pokemon-logo2.png);
     background-size: 100% 100%;
-    max-width: 700px;
-    height: 240px;
+    max-width: 600px;
+    height: 180px;
     width: 100%;
     font-weight: bold;
 }
@@ -111,7 +110,7 @@ body {
     font-size: 16px;
     text-transform: uppercase;
     font-style: bold;
-    margin: 10px 0;
+    margin: 0;
 }
 
 .modal p {
@@ -119,8 +118,10 @@ body {
 }
 
 .poke-img {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.88);
     border: solid 3px black;
+    border-radius: 8px;
+    padding: 15px;
 }
 
 #modal-container {
@@ -130,4 +131,79 @@ body {
 #modal-container.is-visible {
     /* CSS for modal container - add your own desired CSS styles here */
     display: block;
+}
+
+@media (max-width: 870px) {
+    h1 {
+        font-size: 5rem;
+    }
+    .modal {
+        padding: 10px;
+        height: 165px;
+        max-width: 550px;
+    }
+    .poke-img {
+        padding: 5px;
+    }
+    #btn-close {
+        transform: scale(0.91664);
+    }
+    #btn-close:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+/* @media (max-width: 577px) {
+    .pokemon-list {
+        justify-content: center;
+    }
+    .modal {
+        padding: 5px;
+        height: 150px;
+        max-width: 500px;
+    }
+    .modal h1,
+    .modal p {
+        margin: 0;
+        font-size: 12px;
+    }
+    .poke-img {
+        margin: 10px;
+        padding: 0;
+    }
+    #btn-close {
+        transform: scale(0.833);
+    }
+    /* #btn-close:hover {
+        transform: scale(1);
+    } 
+}*/
+
+@media (max-width: 577px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    .pokemon-list {
+        justify-content: center;
+    }
+    .modal {
+        padding: 5px;
+        height: 135px;
+        max-width: 450px;
+    }
+    .modal h1,
+    .modal p {
+        margin: 0;
+        font-size: 12px;
+    }
+    .poke-img {
+        padding: 0;
+    }
+    #btn-close {
+        transform: scale(0.75);
+    }
+    #btn-close:hover {
+        transform: scale(0.9);
+    }
 }
