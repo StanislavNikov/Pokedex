@@ -22,11 +22,31 @@ let pokemonRepository = (function() {
 
     // Function adds each new pokemon as an item with a button to the list
     function addListItem(pokemon) {
-        let pokelist = document.querySelector('ul');
-        let pokelistItem = document.createElement('li');
-        let button = document.createElement('button');
+        // let pokelist = $('ul'),
+        //     pokelistItem = $('<li></li>'),
+        //     button = $('<button></button>');
+
+        // pokelistItem.addClass('list-inline-item');
+        // button.addClass('btn');
+        // button.addClass('btn-default');
+        // button.innerText = pokemon.name;
+
+
+        // pokelistItem.append(button);
+        // pokelist.append(pokelistItem);
+        // button.on('click', function() {
+        //     showDetails(pokemon);
+
+        let pokelist = document.querySelector('ul'),
+            pokelistItem = document.createElement('li'),
+            button = document.createElement('button');
+
+        pokelistItem.classList.add('list-group-item');
         button.innerText = pokemon.name;
         button.classList.add('btn');
+        button.classList.add('btn-light');
+
+
         pokelistItem.appendChild(button);
         pokelist.appendChild(pokelistItem);
         button.addEventListener('click', function() {
