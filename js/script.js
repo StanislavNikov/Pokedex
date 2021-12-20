@@ -84,7 +84,7 @@ let pokemonRepository = (function() {
 
         let closeButtonElement = document.createElement('button');
         closeButtonElement.classList.add('modal-close');
-        closeButtonElement.innerHTML = '<img id = "btn-close" src = "../files/close-button.png" widht = "24px" height = "24px">'
+        closeButtonElement.innerHTML = '<img id = "btn-close" src = "./files/close-button.png" widht = "24px" height = "24px">'
         closeButtonElement.addEventListener('click', hideModal)
 
         let titleElement = document.createElement('h1');
