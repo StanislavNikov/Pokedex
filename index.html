@@ -12,11 +12,19 @@
 
 <body>
 
+    <nav class="navbar navbar-light bg-dark">
+        <div class="container-fluid">
+
+            <div class="col-2"><a class="navbar-brand" aria-label="Pokedex">The Pokedex</a></div>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-warning" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
     <div class="container-fluid">
         <div class="row justify-content-between">
-            <div class="col-2">
-                <h1>Pokedex</h1>
-            </div>
+
 
             <ul class="list-unstyled list-group"></ul>
 
@@ -41,6 +49,8 @@
             </div>
         </div>
     </div>
+
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
