@@ -7,6 +7,13 @@ body {
     background: var(--bg-color);
 } 
 
+.navbar-collapse {
+    flex-grow: 0;
+}
+.navbar-container {
+    padding: 0 30px;
+}
+
 .jumbotron {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
@@ -16,44 +23,20 @@ body {
 
 #pokeList {
     border: solid 3px black;
-    background: url(../files/background4.jpg);
-}
-
-.pokeListItem {
-    width: 240px;
-    background: rgba(11, 11, 11, 0.3);
-}
-
-.pokeListItem,
-.pokeListItem:first-child,
-.pokeListItem:last-child {
-    border-radius: 10px;
-    margin: 2px;
-}
-
-.navbar-collapse {
-    flex-grow: 0;
-}
-.navbar-container {
-    padding: 0 30px;
-}
-#pokeList {
-    border: solid 3px black;
     background: url(../files/background-pokedex.jpg);
 }
 
 .pokeListItem {
-    background: rgba(11, 11, 11, 0.3);
     width: 240px;
+    background: rgba(11, 11, 11, 0.3);
     text-align: center;
 }
 
 .pokeListItem,
 .pokeListItem:first-child,
 .pokeListItem:last-child {
-   
-    margin: 2px;
     border-radius: 10px;
+    margin: 2px;
 }
 
  .pokeButton {
