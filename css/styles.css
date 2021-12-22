@@ -5,7 +5,6 @@
 
 body {
     background: var(--bg-color);
-<<<<<<< HEAD
 } 
 
 .jumbotron {
@@ -21,16 +20,17 @@ body {
 }
 
 .pokeListItem {
-    width: 140px;
-    margin: 2px;
+    width: 240px;
     background: rgba(11, 11, 11, 0.3);
-    border-radius: 10px;
 }
 
+.pokeListItem,
 .pokeListItem:first-child,
 .pokeListItem:last-child {
-=======
+    border-radius: 10px;
+    margin: 2px;
 }
+
 .navbar-collapse {
     flex-grow: 0;
 }
@@ -52,38 +52,23 @@ body {
 .pokeListItem:first-child,
 .pokeListItem:last-child {
    
->>>>>>> branch_b
     margin: 2px;
     border-radius: 10px;
 }
 
-<<<<<<< HEAD
  .pokeButton {
-    font-size: 0.8rem;
-    background: var(--poke-color);
-    width: 100px;
-    height: 100px;
-=======
-.pokeButton {
     background: var(--poke-color);
     width: 100px;
     height: 100px;
     font-size: 0.8rem;
->>>>>>> branch_b
     border-radius: 50%;
     border: solid 1px silver;
 }
 
 .pokeButton:hover {
-<<<<<<< HEAD
-    color: gold;
-    transform: scale(1.4);
-} 
-=======
     color: white;
     transform: scale(1.2);
 }
->>>>>>> branch_b
 
 .modal-content {
     position: absolute;

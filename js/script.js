@@ -19,11 +19,7 @@ let pokemonRepository = (function () {
 
   // Function adds each new pokemon as an item with a button to the list
   function addListItem(pokemon) {
-<<<<<<< HEAD
-    let pokelist = document.getElementById('pokeList'),
-=======
     let pokelist = document.querySelector('#pokeList'),
->>>>>>> branch_b
       pokelistItem = document.createElement('li'),
       button = document.createElement('button');
 
@@ -34,19 +30,6 @@ let pokemonRepository = (function () {
       'col-lg-3',
       'my-2'
     );
-<<<<<<< HEAD
-
-    button.classList.add('pokeButton', 'btn', 'text-light', 'text-capitalize');
-    button.innerText = pokemon.name;
-
-    pokelistItem.appendChild(button);
-    pokelist.appendChild(pokelistItem);
-    button.addEventListener('click', function () {
-      showDetails(pokemon);
-    });
-  }
-
-=======
     button.innerText = pokemon.name;
     button.classList.add(
       'pokeButton',
@@ -63,7 +46,6 @@ let pokemonRepository = (function () {
     });
   }
 
->>>>>>> branch_b
   // Function loads pokemons from the API and adds them to the Array
   function loadList() {
     return fetch(apiUrl)
