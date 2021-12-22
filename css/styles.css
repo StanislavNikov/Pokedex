@@ -1,11 +1,11 @@
 :root {
     --poke-color: linear-gradient(to bottom, #f00000, #222224, #f0f0f0);
-    /* --poke-bg-color: linear-gradient(.5turn, #ee1515, #f00000, #f0f0f0, #fff); */
     --bg-color: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
 }
 
 body {
     background: var(--bg-color);
+<<<<<<< HEAD
 } 
 
 .jumbotron {
@@ -29,30 +29,68 @@ body {
 
 .pokeListItem:first-child,
 .pokeListItem:last-child {
+=======
+}
+.navbar-collapse {
+    flex-grow: 0;
+}
+.navbar-container {
+    padding: 0 30px;
+}
+#pokeList {
+    border: solid 3px black;
+    background: url(../files/background-pokedex.jpg);
+}
+
+.pokeListItem {
+    background: rgba(11, 11, 11, 0.3);
+    width: 240px;
+    text-align: center;
+}
+
+.pokeListItem,
+.pokeListItem:first-child,
+.pokeListItem:last-child {
+   
+>>>>>>> branch_b
     margin: 2px;
     border-radius: 10px;
 }
 
+<<<<<<< HEAD
  .pokeButton {
     font-size: 0.8rem;
     background: var(--poke-color);
     width: 100px;
     height: 100px;
+=======
+.pokeButton {
+    background: var(--poke-color);
+    width: 100px;
+    height: 100px;
+    font-size: 0.8rem;
+>>>>>>> branch_b
     border-radius: 50%;
     border: solid 1px silver;
 }
 
 .pokeButton:hover {
+<<<<<<< HEAD
     color: gold;
     transform: scale(1.4);
 } 
+=======
+    color: white;
+    transform: scale(1.2);
+}
+>>>>>>> branch_b
 
 .modal-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 0);
-    background: url(../files/background4.png);
+    background: url(../files/background-modal.png);
     background-size: 100% 100%;
     color: white;
 }
