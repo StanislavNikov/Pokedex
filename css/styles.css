@@ -1,68 +1,46 @@
 :root {
     --poke-color: linear-gradient(to bottom, #f00000, #222224, #f0f0f0);
-    /* --poke-bg-color: linear-gradient(.5turn, #ee1515, #f00000, #f0f0f0, #fff); */
     --bg-color: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
-}
-
-* {
-    margin: 0;
-    padding: 0;
 }
 
 body {
     background: var(--bg-color);
 }
-
-.container-fluid {
-    padding: 5px;
+.navbar-collapse {
+    flex-grow: 0;
 }
-
-.col-2 {
-    color: gold;
+.navbar-container {
+    padding: 0 30px;
 }
-
-.col-2 a {
-    text-transform: uppercase;
-    border: solid 1px gold;
-    margin: 0;
-    padding: 0 10px;
-    font-size: 2rem;
-}
-
-.list-group {
-    margin: 40px;
-    padding: 20px;
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: space-between;
+#pokeList {
     border: solid 3px black;
-    border-radius: 1%;
-    background: url(../files/background4.jpg);
+    background: url(../files/background-pokedex.jpg);
 }
 
-.list-group-item {
+.pokeListItem {
+    background: rgba(11, 11, 11, 0.3);
+    width: 240px;
+    text-align: center;
+}
+
+.pokeListItem,
+.pokeListItem:first-child,
+.pokeListItem:last-child {
+   
     margin: 2px;
-    background: rgba(11, 11, 11, 0.7);
     border-radius: 10px;
 }
 
-.list-group-item:first-child,
-.list-group-item:last-child {
-    margin: 2px;
-    border-radius: 10px;
-}
-
-.btn-light {
+.pokeButton {
     background: var(--poke-color);
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
+    font-size: 0.8rem;
     border-radius: 50%;
     border: solid 1px silver;
-    text-transform: capitalize;
-    color: rgb(248, 248, 248);
 }
 
-.btn-light:hover {
+.pokeButton:hover {
     color: white;
     transform: scale(1.2);
 }
@@ -72,7 +50,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, 0);
-    background: url(../files/background4.png);
+    background: url(../files/background-modal.png);
     background-size: 100% 100%;
     color: white;
 }
