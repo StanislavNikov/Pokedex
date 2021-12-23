@@ -16,7 +16,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
         <div class="container-fluid navbar-container">
-            <a href="" class="navbar-brand text-uppercase"><img src="files/StansNikov-logo2.png" class="img-thumbnail img-fluid" style="max-height: 55px" alt=""></a>
+            <a href="" class="navbar-brand text-uppercase" aria-label="logo"><img src="files/StansNikov-logo2.png" class="img-thumbnail img-fluid" style="max-height: 55px" alt="my logo"></a>
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
 
@@ -26,7 +26,7 @@
                         <a href="index.html" class="navbar-brand text-uppercase text-warning">The Pokedex</a>
                       </li>
                     <li class="nav-item">
-                        <a href="about-contact.html" id="about" class="nav-link px-3">About & Contact</a>
+                        <a href="about-contact.html" id="about" class="nav-link px-3 text-light">About & Contact</a>
                       </li>
                     
                     <li class="nav-item">
@@ -55,20 +55,20 @@
     <footer class="p-3 bg-dark text-white text-center position-relative]">
 	    <div class="container">
             <p>Copyright &copy; 2021 Stanislav Nikov's Pokedex</p>
-            <a href="https://facebook.com/eyedealist" target="_blank"><i class="bi bi-facebook text-light p-1"></i></a>
-            <a href="https://twitter.com/StanislavMNikov" target="_blank"><i class="bi bi-twitter text-light p-1"></i></a>
-            <a href="https://github.com/StanislavNikov" target="_blank"><i class="bi bi-github text-light p-1"></i></a>
-            <a href="https://www.linkedin.com/in/stanislav-nikov-thekingofburden/" target="_blank"><i class="bi bi-linkedin text-light p-1"></i></a>
-            <a href="https://www.instagram.com/StansNikov/" target="_blank"><i class="bi bi-instagram text-light p-1"></i></a>
+            <a href="https://facebook.com/eyedealist" target="_blank"  aria-label="facebook"><i class="bi bi-facebook text-light p-1"></i></a>
+            <a href="https://twitter.com/StanislavMNikov" target="_blank"  aria-label="twitter"><i class="bi bi-twitter text-light p-1"></i></a>
+            <a href="https://github.com/StanislavNikov" target="_blank" aria-label="github"><i class="bi bi-github text-light p-1"></i></a>
+            <a href="https://www.linkedin.com/in/stanislav-nikov-thekingofburden/" target="_blank" aria-label="linkedin"><i class="bi bi-linkedin text-light p-1"></i></a>
+            <a href="https://www.instagram.com/StansNikov/" target="_blank"><i class="bi bi-instagram text-light p-1" aria-label="instagram"></i></a>
 		</div>
 	</footer>
 
     <!-- MODAL -->
-    <div class="modal fade" id="pokedex" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="pokedex" tabindex="-1" role="dialog" aria-labelledby="pokemon modal" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h2 class="modal-title" id="modal title">Modal title</h2>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -89,6 +89,7 @@
     <script src="js/promise-polyfill.js"></script>
     <script src="js/fetch.umd.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/tota11y.min.js"></script>
 </body>
 
 </html>
