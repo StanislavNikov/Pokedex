@@ -1,10 +1,14 @@
-:root {
-    --poke-color: linear-gradient(to bottom, #f00000, #222224, #f0f0f0);
-    --bg-color: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
-}
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
 
 body {
-    background: var(--bg-color);
+    background: -webkit-gradient(linear, left top, right top, from(#BF953F), color-stop(#FCF6BA), color-stop(#B38728), color-stop(#FBF5B7), to(#AA771C));
+    background: -o-linear-gradient(left, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
 }
 
 body::before {
@@ -14,6 +18,8 @@ body::before {
 }
 
 .navbar-collapse {
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
     flex-grow: 0;
 }
 
@@ -42,7 +48,9 @@ body::before {
 }
 
 .pokeButton {
-    background: var(--poke-color);
+    background: -webkit-gradient(linear, left top, left bottom, from(#f00000), color-stop(#222224), to(#f0f0f0));
+    background: -o-linear-gradient(top, #f00000, #222224, #f0f0f0);
+    background: linear-gradient(to bottom, #f00000, #222224, #f0f0f0);
     width: 100px;
     height: 100px;
     font-size: 0.8rem;
@@ -52,6 +60,8 @@ body::before {
 
 .pokeButton:hover {
     color: white;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
     transform: scale(1.2);
 }
 
@@ -59,6 +69,8 @@ body::before {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     background: url(../../files/background-modal.png);
     background-size: 100% 100%;
@@ -87,6 +99,8 @@ body::before {
 }
 
 .close {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
     transform: scale(0.9);
 }
 
