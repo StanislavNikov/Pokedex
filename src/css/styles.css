@@ -10,7 +10,7 @@ body {
 body::before {
     display: block;
     content: '';
-    height: 100px;
+    height: 80px;
 }
 
 .navbar-collapse {
