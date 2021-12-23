@@ -5,6 +5,20 @@ let pokemonRepository = (function () {
   let pokemonList = [];
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
+  const searchBox = document.getElementById('searchBox');
+  searchBox.addEventListener('input', () => {
+    let pokeSearch = document.querySelectorAll('.list-group-item');
+    let pokeString = searchBox.value.toLowerCase();
+
+    pokeSearch.forEach((pokemon) => {
+      if (pokemon.innerText.toLowerCase().indexOf(pokeString) > -1) {
+        pokemon.style.display = '';
+      } else {
+        pokemon.style.display = 'none';
+      }
+    });
+  });
+
   // Function for adding a new pokemon to the pokemonList Array
   function add(pokemon) {
     return typeof pokemon === 'object' && 'name' in pokemon
@@ -38,6 +52,9 @@ let pokemonRepository = (function () {
       'text-capitalize',
       'text-center'
     );
+
+    button.setAttribute('data-toggle', 'modal');
+    button.setAttribute('data-target', '#pokedex');
 
     pokelistItem.appendChild(button);
     pokelist.appendChild(pokelistItem);
@@ -108,8 +125,6 @@ let pokemonRepository = (function () {
     modalBody.append(imageElement);
     modalBody.append(heightElement);
     modalBody.append(weightElement);
-
-    $('#pokedex').modal();
   }
 
   return {
