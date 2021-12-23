@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
-    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="src/css/styles.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -17,9 +17,9 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
         <div class="container-fluid navbar-container">
-            <a href="" class="navbar-brand text-uppercase" aria-label="logo"><img src="files/StansNikov-logo2.png" class="img-thumbnail img-fluid" style="max-height: 55px" alt="my logo"></a>
+            <a href="" class="navbar-brand text-uppercase" aria-label="logo"><img src="/files/StansNikov-logo2.png" class="img-thumbnail img-fluid" style="max-height: 55px" alt="my logo"></a>
             
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
 
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav mr-auto">
@@ -41,22 +41,31 @@
         </div>
     </nav>
 
-    <!-- INTRODUCTION / SHOWCASE-->
+    <!-- INTRODUCTION -->
+
+    <div class="container">
+        <div class="col-md-12">
+            <h1 class="bg-light mb-4 text-dark text-center">INTRODUCTION</h1>
+        </div>
+    </div>
+
+
+    <!-- SHOWCASE-->
     <section class="bg-dark text-light p-5 text-center">
         <div class="container">
+          <div class="col-md">
             <div class="d-flex">
                 <div>
-                    <img class="img-fluid h-20" src="files/undraw_programming.svg" alt="">
+                    <img class="img-fluid h-75 px-5" src="files/undraw_programming.svg" alt="">
                 </div>
-
-                <div class="card" id="card-intro" style="width: 60rem;">
+                <div class="card px5 " id="card-intro" style="width: 60rem;">
                     <div class="card-body">
                       <h2 class="card-title text-dark">Stanislav M. Nikov</h2>
                       <p class="card-text text-dark">I am currently a member of <span><a href="https://careerfoundry.com/en/referral_registrations/new?referral=xr5pmD78" target="_blank">CareerFoundry</a></span>'s community.<span><a href="https://careerfoundry.com/en/referral_registrations/new?referral=xr5pmD78" target="_blank">CareerFoundry</a></span> is a place where you can learn from the best and aim to prosper in a highly advanced and innovative environment. I am also trying to <b>mine</b> cryptocurrencies in my spare time. I use <a href="https://hiveos.farm?ref=851959">HiveOS</a> to manage my only rig, but of course - if you have more than one, it will serve you better.<br>Let's get back on topic! Alas, I started my Web Dev journey on my own and I still don't have the luxury of being friends with the professionals who usually work in teams, because there are so many tasks involved in the process of creating a website and a lot of them are very unique. I didn't imagine, for example, that I'd have to be so aware of and skillful with the visual arts and all the graphic designs that take place. Thankfully, there are tools like <a href="https://www.canva.com/" target="_blank">Canva</a> and <a href="https://www.svgator.com/" target="_blank">SVGAtor</a> which can really help out a beginner! They are easy to use and one can find plenty of tutorials all over the web, if necessary.</p>
                     </div>
-                  </div>
-             
+                </div>             
             </div>  
+          </div>
         </div>
     </section>
 
@@ -66,55 +75,51 @@
         <div class="container">  
             <h2 class="text-center mb-4">GALLERY</h2>     
             <div class="row g-4">                
-            <div class="col col-md-6 col-lg-3">
+              <div class="col col-md-6 col-lg-3">
                 <div class="card bg-ligh">
+                    <div class="card-body text-center text-dark">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, ex?</p>
+                    </div>
+                </div>
+                <div class="card bg-ligh">
+                    <div class="card-body text-center text-dark">
+                        <img src="files/background.jpeg" width="200px" height="200px" alt="">
+                    </div>
+                </div>
+            </div> <div class="col col-md-6 col-lg-3">
+              <div class="card bg-ligh">
+                  <div class="card-body text-center text-dark">
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, ex?</p>
+                  </div>
+              </div>
+              <div class="card bg-ligh">
+                  <div class="card-body text-center text-dark">
+                      <img src="files/background.jpeg" width="200px" height="200px" alt="">
+                  </div>
+              </div>
+          </div> <div class="col col-md-6 col-lg-3">
+            <div class="card bg-ligh">
+                <div class="card-body text-center text-dark">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, ex?</p>
+                </div>
+            </div>
+            <div class="card bg-ligh">
                 <div class="card-body text-center text-dark">
                     <img src="files/background.jpeg" width="200px" height="200px" alt="">
                 </div>
-                <div class="card bg-ligh">
-                    <div class="card-body text-center text-dark">
-                    <img src="files/background.jpeg" width="200px" height="200px" alt="">
-                    </div>
-                </div>
             </div>
-            </div>
-
-            <div class="col col-md-6 col-lg-3">
-                <div class="card bg-ligh">
-                    <div class="card-body text-center text-dark">
-                    <img src="files/background.jpeg" width="200px" height="200px" alt="">
-                    </div>
-                    <div class="card bg-ligh">
-                    <div class="card-body text-center text-dark">
-                        <img src="files/background.jpeg" width="200px" height="200px" alt="">
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="col col-md-6 col-lg-3">
-                <div class="card bg-ligh">
-                <div class="card-body text-center text-dark">
-                    <img src="files/background.jpeg" width="200px" height="200px" alt="">
-                </div>
-                <div class="card bg-ligh">
-                    <div class="card-body text-center text-dark">
-                    <img src="files/background.jpeg" width="200px" height="200px" alt="">
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="col col-md-6 col-lg-3">
-                <div class="card bg-ligh">
-                    <div class="card-body text-center text-dark">
-                        <img src="files/background.jpeg" width="200px" height="200px" alt="">
-                    </div>
-                </div>
-                <div class="card bg-ligh">
-                    <div class="card-body text-center text-dark">
-                        <img src="files/background.jpeg" width="200px" height="200px" alt="">
-                    </div>
-                </div>
-            </div>          
+        </div> <div class="col col-md-6 col-lg-3">
+          <div class="card bg-ligh">
+              <div class="card-body text-center text-dark">
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, ex?</p>
+              </div>
+          </div>
+          <div class="card bg-ligh">
+              <div class="card-body text-center text-dark">
+                  <img src="files/background.jpeg" width="200px" height="200px" alt="">
+              </div>
+          </div>
+      </div>       
         </div>
     </section>  
 
@@ -172,23 +177,23 @@
     <!-- CONTACT INFO -->
     <section class="p-5">
     <div class="container">
-        <div class="row g-4">
-            <div class="col-md-6">
-                <h2 class="text-left text-uppercase mb-4">Contact Info</h2>
+        <h2 class="text-center text-uppercase mb-4">Contact Info</h2>
+        <div class="row g-4">         
+            <div class="col-md-6">        
                 <ul class="list-group list-group-flush lead">
-                <li class="list-group-item">
+                <li class="list-group-item mb-5">
                     <span class="font-weight-bold">Address: </span> 89165, Dietenheim
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item mb-5">
                     <span class="font-weight-bold">Phone: </span>+49 152 17477 530
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item mb-5">
                     <span class="font-weight-bold">email: </span>stanislavmnikov@gmail.com
                 </li>
                 </ul>
             </div>
             <div class="col-md-6">
-                <div id='map' style='width: 500px; height: 290px;'></div>
+                <div id='map' style='width: 540px; height: 265px;'></div>
             </div>
         </div>
     </div>
@@ -234,8 +239,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="js/promise-polyfill.js"></script>
-    <script src="js/fetch.umd.js"></script>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
     <script>
       mapboxgl.accessToken = 'pk.eyJ1Ijoic3RhbmlzbGF2bmlrb3YiLCJhIjoiY2t4ajFuenRzNmIxNzJ0bGF0MngyZ3l3dSJ9.5iGFbChdDIpXetmlVD2y6Q';
@@ -246,7 +249,9 @@
       center: [10.0716, 48.2122]
       });
       </script>
-    <script src="js/tota11y.min.js"></script>
+      <script src="src/js/promise-polyfill.js"></script>
+      <script src="src/js/fetch.umd.js"></script>
+      <script src="src/js/tota11y.min.js"></script>
     
 </body>
   

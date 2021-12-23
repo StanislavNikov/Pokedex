@@ -7,18 +7,22 @@
     <title>Pokedex</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="src/css/styles.css" rel="stylesheet" type="text/css" />
 
 </head>
 
 <body>
 
     <!-- NAVBAR -->
+
+
+
+    
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-        <div class="container-fluid navbar-container">
+        <div class="container-fluid" id="navbar-container">
             <a href="" class="navbar-brand text-uppercase" aria-label="logo"><img src="files/StansNikov-logo2.png" class="img-thumbnail img-fluid" style="max-height: 55px" alt="my logo"></a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
 
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav mr-auto">
@@ -28,7 +32,7 @@
                     <li class="nav-item">
                         <a href="about-contact.html" id="about" class="nav-link px-3 text-light">About & Contact</a>
                       </li>
-                    
+
                     <li class="nav-item">
                         <form class="d-flex">
                             <input id="searchBox" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -47,10 +51,10 @@
             <p class="text-center">Welcome to the <span class="text-uppercase font-weight-bold">Pokedex</span>! Look around for your favourite pokemon and... try to be like him!</p>
         </div>
     </div>
-    
+
     <!-- THE POKELIST -->
     <ul id="pokeList" class="d-flex flex-wrap flex-row justify-content-center list-group list-unstyled m-5 p-2"></ul>
-    
+
     <!-- FOOTER -->
     <footer class="p-3 bg-dark text-white text-center position-relative]">
 	    <div class="container">
@@ -82,14 +86,14 @@
             </div>
         </div>
     </div>
-        
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="js/promise-polyfill.js"></script>
-    <script src="js/fetch.umd.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/tota11y.min.js"></script>
+    <script src="src/js/promise-polyfill.js"></script>
+    <script src="src/js/fetch.umd.js"></script>
+    <script src="src/js/script.js"></script>
+    <script src="src/js/tota11y.min.js"></script>
 </body>
 
 </html>
