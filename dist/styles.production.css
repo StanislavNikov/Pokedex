@@ -72,7 +72,7 @@ body::before {
     -webkit-transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
-    background: url(../../files/background-modal.png);
+    background: url(../files/background-modal.png);
     background-size: 100% 100%;
     color: white;
 }
