@@ -32,7 +32,7 @@ body::before {
 
 #pokeList {
     border: solid 3px black;
-    background: url(../../files/background-pokedex.jpg);
+    background: url(../files/background-pokedex.jpg);
 }
 
 .pokeListItem {
