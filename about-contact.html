@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Pokedex</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
-    <link href="src/css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="dist/styles.production.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -17,9 +18,12 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
         <div class="container-fluid navbar-container">
-            <a href="files/StansNikov-logo2.png" target="_blank" class="navbar-brand text-uppercase" aria-label="logo"><img src="files/StansNikov-logo2.png" class="img-thumbnail img-fluid" style="max-height: 55px" alt="my logo"></a>
+            <a href="files/StansNikov-logo2.png" target="_blank" class="navbar-brand text-uppercase"
+                aria-label="logo"><img src="files/StansNikov-logo2.png" class="img-fluid" style="max-height: 50px"
+                    alt="my logo"></a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu"><span
+                    class="navbar-toggler-icon"></span></button>
 
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav mr-auto">
@@ -27,12 +31,15 @@
                         <a href="index.html" class="navbar-brand text-uppercase text-warning">The Pokedex</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about-contact.html" id="about" class="nav-link pr-3 pb-3 text-light text-uppercase">About & Contact</a>
+                        <a href="about-contact.html" id="about"
+                            class="nav-link pr-3 pb-3 text-light text-uppercase">About & Contact</a>
                     </li>
                     <li class="nav-item">
                         <form class="d-flex">
-                            <input id="searchBox" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-warning" type="submit">Search</button>
+                            <input id="searchBox" class="form-control me-2" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <!--button temporarily disabled-->
+                            <!-- <button id="searchBtn" class="btn btn-outline-warning" type="submit">Search</button> -->
                         </form>
                     </li>
                 </ul>
@@ -58,10 +65,25 @@
                     </div>
                     <div class="card px5 " id="card-intro" style="width: 50rem;">
                         <div class="card-body">
-                            <h2 class="card-title text-dark">Stanislav M. Nikov</h2>
-                            <p class="card-text text-dark">I am currently a member of <span><a href="https://careerfoundry.com/en/referral_registrations/new?referral=xr5pmD78" target="_blank">CareerFoundry</a></span>'s community. <span><a href="https://careerfoundry.com/en/referral_registrations/new?referral=xr5pmD78" target="_blank">CareerFoundry</a></span>                                is a place where you can learn from the best and aim to prosper in a highly advanced and innovative environment. I started my Web Dev journey on my own and I still don't have the luxury of being friends with the professionals
-                                who usually work in teams, because there are so many tasks involved in the process of creating a website and a lot of them are very unique. I didn't imagine, for example, that I'd have to be so aware of and skillful with
-                                the visual arts and all the graphic designs that take place. Thankfully, there are tools like <a href="https://www.canva.com/" target="_blank">Canva</a> and <a href="https://www.svgator.com/" target="_blank">SVGAtor</a>                                which can really help out a beginner! They are easy to use and one can find plenty of tutorials all over the web, if necessary.<br> I am also trying to <b>mine</b> cryptocurrencies in my spare time. I use <a href="https://hiveos.farm?ref=851959">HiveOS</a>                                to manage my only rig, but of course - if you have more than one, it will serve you better.</p>
+                            <h2 class="card-title text-dark text-uppercase">Stanislav Nikov</h2>
+                            <p class="card-text text-dark">I am currently a member of <span><a
+                                        href="https://careerfoundry.com/en/referral_registrations/new?referral=xr5pmD78"
+                                        target="_blank">CareerFoundry</a></span>'s community. <span><a
+                                        href="https://careerfoundry.com/en/referral_registrations/new?referral=xr5pmD78"
+                                        target="_blank">CareerFoundry</a></span> is a place where you can learn from the
+                                best and aim to prosper in a highly advanced and innovative environment. I started my
+                                Web Dev journey on my own and I still don't have the luxury of being friends with the
+                                professionals
+                                who usually work in teams, because there are so many tasks involved in the process of
+                                creating a website and a lot of them are very unique. I didn't imagine, for example,
+                                that I'd have to be so aware of and skillful with
+                                the visual arts and all the graphic designs that take place. Thankfully, there are tools
+                                like <a href="https://www.canva.com/" target="_blank">Canva</a> and <a
+                                    href="https://www.svgator.com/" target="_blank">SVGAtor</a> which can really help
+                                out a beginner! They are easy to use and one can find plenty of tutorials all over the
+                                web, if necessary.<br> I am also trying to <b>mine</b> cryptocurrencies in my spare
+                                time. I use <a href="https://hiveos.farm?ref=851959">HiveOS</a> to manage my only rig,
+                                but of course - if you have more than one, it will serve you better.</p>
                         </div>
                     </div>
                 </div>
@@ -133,48 +155,66 @@
                 <div class="card">
                     <div class="card-header bg-dark" id="headingOne">
                         <h3 class="mb-0 text-light">
-                            <button class="" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                             Collapsible Group Item #1
+                            <button class="" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                Collapsible Group Item #1
                             </button>
                         </h3>
                     </div>
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                         <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                            helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                            excepteur butcher vice lomo. Leggings occaecat craft
+                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                            accusamus labore sustainable VHS.
                         </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-header bg-dark" id="headingTwo">
                         <h3 class="mb-0 text-light">
-                            <button class="" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                             Collapsible Group Item #2
-                             </button>
+                            <button class="" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                Collapsible Group Item #2
+                            </button>
                         </h3>
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                         <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                            helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                            excepteur butcher vice lomo. Leggings occaecat craft
+                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                            accusamus labore sustainable VHS.
                         </div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-header bg-dark" id="headingThree">
                         <h3 class="mb-0 text-light">
-                            <button class="" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                             Collapsible Group Item #3
+                            <button class="" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Collapsible Group Item #3
                             </button>
                         </h3>
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                         <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
-                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                            helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                            excepteur butcher vice lomo. Leggings occaecat craft
+                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
+                            accusamus labore sustainable VHS.
                         </div>
                     </div>
                 </div>
@@ -211,11 +251,16 @@
     <footer class="p-3 bg-dark text-white text-center position-relative]">
         <div class="container">
             <p>Copyright &copy; 2021 Stanislav Nikov's Pokedex</p>
-            <a href="https://facebook.com/eyedealist" target="_blank" aria-label="facebook"><i class="bi bi-facebook text-light p-1"></i></a>
-            <a href="https://twitter.com/StanislavMNikov" target="_blank" aria-label="twitter"><i class="bi bi-twitter text-light p-1"></i></a>
-            <a href="https://github.com/StanislavNikov" target="_blank" aria-label="github"><i class="bi bi-github text-light p-1"></i></a>
-            <a href="https://www.linkedin.com/in/stanislav-nikov-thekingofburden/" target="_blank" aria-label="linkedin"><i class="bi bi-linkedin text-light p-1"></i></a>
-            <a href="https://www.instagram.com/StansNikov/" target="_blank"><i class="bi bi-instagram text-light p-1" aria-label="instagram"></i></a>
+            <a href="https://facebook.com/eyedealist" target="_blank" aria-label="facebook"><i
+                    class="bi bi-facebook text-light p-1"></i></a>
+            <a href="https://twitter.com/StanislavMNikov" target="_blank" aria-label="twitter"><i
+                    class="bi bi-twitter text-light p-1"></i></a>
+            <a href="https://github.com/StanislavNikov" target="_blank" aria-label="github"><i
+                    class="bi bi-github text-light p-1"></i></a>
+            <a href="https://www.linkedin.com/in/stanislav-nikov-thekingofburden/" target="_blank"
+                aria-label="linkedin"><i class="bi bi-linkedin text-light p-1"></i></a>
+            <a href="https://www.instagram.com/StansNikov/" target="_blank"><i class="bi bi-instagram text-light p-1"
+                    aria-label="instagram"></i></a>
         </div>
     </footer>
 
@@ -232,16 +277,22 @@
                 <div class="modal-body"></div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                    Close
+                        Close
                     </button>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
     <script>
         mapboxgl.accessToken = 'pk.eyJ1Ijoic3RhbmlzbGF2bmlrb3YiLCJhIjoiY2t4ajFuenRzNmIxNzJ0bGF0MngyZ3l3dSJ9.5iGFbChdDIpXetmlVD2y6Q';
@@ -252,8 +303,8 @@
             center: [10.0716, 48.2122]
         });
     </script>
-    <script src="src/js/promise-polyfill.js"></script>
-    <script src="src/js/fetch.umd.js"></script>
+    <script src="dist/promise-polyfill.js"></script>
+    <script src="dist/fetch.umd.js"></script>
     <!--     <script src="src/js/tota11y.min.js"></script>
  -->
 </body>
