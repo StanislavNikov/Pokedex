@@ -94,6 +94,8 @@ let pokemonRepository = (function () {
         item.imageUrl = details.sprites.front_default;
         item.height = details.height;
         item.weight = details.weight;
+        item.types = details.types;
+        item.abilities = details.abilities;
       })
       .catch(function (e) {
         console.error(e);
@@ -114,17 +116,35 @@ let pokemonRepository = (function () {
     modalBody.empty();
 
     let nameElement = $(
-      '<h1 class="text-capitalize">' + pokemon.name + '</h1>'
+      '<h2 class="text-capitalize">' + pokemon.name + '</h2>'
     );
-    let imageElement = $('<img class="modal-img" src="" >');
+    let modalTitleInfoContainer = $('<div class="d-flex ml-1">');
+    let heightElement = $('<h3 class="text-black text-uppercase pr-3 m-0">' + 'Height: ' + '<span class="font-weight-bold">' + pokemon.height + '</span>' + '</h3>');
+    let weightElement = $('<h3 class="text-black text-uppercase m-0">' + 'Weight: ' + '<span class=" font-weight-bold">' + pokemon.weight + '</span>' + '</h3>');
+    
+    let imageElement = $('<img class="modal-img my-2 mb-4" src="" >');
     imageElement.attr('src', pokemon.imageUrl);
-    let heightElement = $('<p>' + 'Height: ' + pokemon.height + '</p>');
-    let weightElement = $('<p>' + 'Weight: ' + pokemon.weight + '</p>');
 
-    modalTitle.append(nameElement);
-    modalBody.append(imageElement);
-    modalBody.append(heightElement);
-    modalBody.append(weightElement);
+    let abilitiesArr = [],
+        typesArr = [];
+    // Looping through details.types
+    Object.keys(pokemon.types).forEach(type => {
+      typesArr.push(" " + pokemon.types[type].type.name);
+    })
+    let typesElemenet = $('<p class="text-uppercase text-warning m-0 ml-1">' + 'Types: ' + '<span class="text-info font-weight-bold text-capitalize">' + typesArr + '</span>' + '</p>');
+    // Looping through details.abilities
+    Object.keys(pokemon.abilities).forEach(ability => {
+      abilitiesArr.push(" " + pokemon.abilities[ability].ability.name);
+    })
+    let abilitiesElement = $('<p class="text-uppercase text-warning m-0 ml-1">' + 'Abilities: ' + '<span class="text-info font-weight-bold text-capitalize">' + abilitiesArr + '</span>' + '</p>');
+    
+    modalTitle.append(nameElement);      
+    modalTitleInfoContainer.append(heightElement);
+    modalTitleInfoContainer.append(weightElement);  
+    modalTitle.append(modalTitleInfoContainer);
+    modalBody.append(imageElement);  
+    modalBody.append(typesElemenet);
+    modalBody.append(abilitiesElement);
   }
 
   return {

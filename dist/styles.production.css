@@ -77,9 +77,13 @@ body::before {
     color: white;
 }
 
-.modal-title h1 {
+.modal-title h2 {
     font-size: 2rem;
     color: rgb(43, 42, 41);
+}
+
+.modal-title h3 {
+    font-size: 0.7rem;
 }
 
 .modal-header,
@@ -87,12 +91,8 @@ body::before {
     background: white;
 }
 
-.modal p {
-    margin: 10px 0;
-}
-
 .modal-img {
-    padding: 15px;
+    padding: 10px;
     background: rgba(173, 173, 165, 0.8);
     border: solid 3px black;
     border-radius: 8px;
@@ -112,4 +112,8 @@ body::before {
 #card-intro {
     max-height: 400px;
     overflow: scroll;
+}
+
+.text-black {
+    color: black;
 }
