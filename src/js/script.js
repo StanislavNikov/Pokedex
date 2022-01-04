@@ -6,7 +6,11 @@ let pokemonRepository = (function () {
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
   const searchBox = document.getElementById('searchBox');
-  searchBox.addEventListener('input', () => {
+  const searchBtn = document.getElementById('searchBtn');
+
+  searchBtn.addEventListener('click', searchThemAll);
+
+  function searchThemAll() {
     let pokeSearch = document.querySelectorAll('.list-group-item');
     let pokeString = searchBox.value.toLowerCase();
 
@@ -16,8 +20,8 @@ let pokemonRepository = (function () {
       } else {
         pokemon.style.display = 'none';
       }
-    });
-  });
+    });   
+  }
 
   // Function for adding a new pokemon to the pokemonList Array
   function add(pokemon) {
