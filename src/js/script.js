@@ -53,7 +53,7 @@ let pokemonRepository = (function () {
       'pokeButton',
       'btn',
       'text-light',
-      'text-capitalize',
+      'text-uppercase',
       'text-center'
     );
 
@@ -120,7 +120,7 @@ let pokemonRepository = (function () {
     modalBody.empty();
 
     let nameElement = $(
-      '<h2 class="text-capitalize">' + pokemon.name + '</h2>'
+      '<h2 class="text-uppercase">' + pokemon.name + '</h2>'
     );
     let modalTitleInfoContainer = $('<div class="d-flex ml-1">');
     let heightElement = $('<h3 class="text-black text-uppercase pr-3 m-0">' + 'Height: ' + '<span class="font-weight-bold">' + pokemon.height + '</span>' + '</h3>');
@@ -166,3 +166,4 @@ pokemonRepository.loadList().then(function () {
     pokemonRepository.addListItem(pokemon);
   });
 });
+

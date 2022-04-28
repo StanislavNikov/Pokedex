@@ -3,6 +3,10 @@
     --bg-color: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
 }
 
+.text-black {
+    color: black;
+}
+
 body {
     background: var(--bg-color);
 }
@@ -13,6 +17,9 @@ body::before {
     height: 80px;
 }
 
+.navbar, #footer {
+    background-color: #111016  ;
+}
 .navbar-collapse {
     flex-grow: 0;
 }
@@ -43,8 +50,8 @@ body::before {
 
 .pokeButton {
     background: var(--poke-color);
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     font-size: 0.8rem;
     border-radius: 50%;
     border: solid 1px silver;
@@ -53,6 +60,7 @@ body::before {
 .pokeButton:hover {
     color: white;
     transform: scale(1.2);
+    transition: 0.4s;
 }
 
 .modal-content {
@@ -86,13 +94,13 @@ body::before {
     border-radius: 8px;
 }
 
-.close {
-    transform: scale(0.9);
-}
-
-#map {
-    width: 100%;
-    height: 100%;
+.close:focus,.close:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+.close:hover {
+    transform: scale(2);
+    transition: 0.1s;
 }
 
 #card-intro {
@@ -100,6 +108,31 @@ body::before {
     overflow: scroll;
 }
 
-.text-black {
-    color: black;
+.card-img {
+    width: 100%;
+    height: 100%;
+}
+
+.mapboxgl-canvas-container {
+    height: 28.3vh;
+    width: 100vw ;
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .card-img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+
+@media (max-width: 991px) {
+    #card-intro {
+        max-height: 250px;
+    }
+    #showcase {
+       padding: 30px!important;
+    }
+    #showcase-container {
+       max-width: 866px!important;
+    }
 }
