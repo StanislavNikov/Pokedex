@@ -48,7 +48,7 @@ let pokemonRepository = (function () {
       'col-lg-3',
       'my-2'
     );
-    button.innerText = pokemon.name;
+  
     button.classList.add(
       'pokeButton',
       'btn',
@@ -64,8 +64,72 @@ let pokemonRepository = (function () {
     pokelist.appendChild(pokelistItem);
     button.addEventListener('click', function () {
       showDetails(pokemon);
-    });
-  }
+    });    
+
+    // Adding image to the pokeButton + making the pokemon.name text circular
+
+    loadDetails(pokemon).then( function () {
+      let buttonImgDiv = document.createElement('div'),
+      buttonImg = document.createElement('img'),
+      buttonTextDiv = document.createElement('div');
+
+      buttonImg.src = pokemon.imageUrl;
+      buttonImg.alt = pokemon.name;
+      buttonTextDiv.innerText = pokemon.name;
+      buttonTextDiv.classList.add('buttonText');   
+
+      let buttonText = buttonTextDiv.innerText;
+      
+      const buttonStyleWidth = window.getComputedStyle(button).width
+      // console.log(buttonStyleWidth)
+      buttonWidth = Number(buttonStyleWidth.replace(/px$/, ''))
+      // console.log(buttonWidth)      
+      
+      const angleToRadian = (angle) => {
+        return angle * (Math.PI / 180);
+      }
+      const diameter = buttonWidth - (buttonWidth / 8);
+      const radius = diameter / 2;
+      
+      buttonTextDiv.style.width = `${diameter}px`;
+      buttonTextDiv.style.height = `${diameter}px`;
+
+      const pokeCharacters = buttonText.split('').reverse();
+      buttonTextDiv.innerText = null;
+
+      let angle = 30; 
+      const deltaAngle = 120 / (pokeCharacters.length - 1);
+      // console.log("deltaAngle: ", deltaAngle)
+      
+      pokeCharacters.forEach((char, index) => {
+        // console.log(`===${char}===`);
+        const charElement = document.createElement('span');
+        charElement.innerText = char;
+        let xPosition = radius * Math.cos(angleToRadian(angle));
+        let yPosition = radius * Math.sin(angleToRadian(angle));
+        // console.log('xPosition: ', xPosition);
+        // console.log('yPosition: ', yPosition);
+        const transform = `translate(${xPosition}px, ${yPosition}px)`;
+        /* const rotate = `rotate(${0}deg)`; */
+        charElement.style.transform = `${transform}`;
+
+        angle += deltaAngle
+
+        charElement.style.fontSize = `${diameter/240}rem`
+        buttonTextDiv.appendChild(charElement);
+        // console.log(buttonTextDiv);
+        // console.log("=======");
+      })  
+      
+      buttonImgDiv.appendChild(buttonImg);
+      button.appendChild(buttonImgDiv);
+      button.appendChild(buttonTextDiv);
+    })
+    
+    button.addEventListener('click', function () {
+      showDetails(pokemon)
+    })
+  }  
 
   // Function loads pokemons from the API and adds them to the Array
   function loadList() {
@@ -96,6 +160,7 @@ let pokemonRepository = (function () {
       })
       .then(function (details) {
         item.imageUrl = details.sprites.front_default;
+        item.imageUrlAnimated = details.sprites.versions['generation-v']['black-white'].animated.front_default;
         item.height = details.height;
         item.weight = details.weight;
         item.types = details.types;
@@ -127,7 +192,7 @@ let pokemonRepository = (function () {
     let weightElement = $('<h3 class="text-black text-uppercase m-0">' + 'Weight: ' + '<span class=" font-weight-bold">' + pokemon.weight + '</span>' + '</h3>');
     
     let imageElement = $('<img class="modal-img my-2 mb-4" src="" >');
-    imageElement.attr('src', pokemon.imageUrl);
+    imageElement.attr('src', pokemon.imageUrlAnimated);
 
     let abilitiesArr = [],
         typesArr = [];
@@ -166,4 +231,3 @@ pokemonRepository.loadList().then(function () {
     pokemonRepository.addListItem(pokemon);
   });
 });
-
